@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+
+    <link rel="stylesheet" href="styleshoppingapp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kanit:wght@500;600;700;800;900&family=Raleway:wght@500;600;700;800&family=Rubik:wght@400;500;700&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+  <body>
+    <div class="navdiv">
+      <nav class="navbar">
+        <span class="navbartext">SHOPPING APP</span>
+
+        <a class="btn-back" href="../index.html">Back to portfolio</a>
+      </nav>
+    </div>
+
+    <section id="presentation">
+      <h3 class="textprincipal">Shopping List Application</h3>
+      <div class="separationline">
+        <div class="line"></div>
+      </div>
+      <p class="subtextprincipal">
+        Welcome to the shopping list, you can add items, add prices and
+        calculate the amount if your budget is low, don't worry erase it or
+        apply discounts for any item. Taxes calculations are also done!
+      </p>
+    </section>
+
+    <section id="additems">
+      <div class="container">
+        <div class="elements">
+          <p class="inputname">Product Name</p>
+          <input class="inputstyle" type="text" placeholder="Enter item" />
+        </div>
+
+        <div class="elements">
+          <p class="inputname">Quantity</p>
+          <div class="divbuttons">
+            <div>
+              <input class="inputstylenum" type="number" value="0" />
+            </div>
+            <div>
+              <button class="arrownumbersup" onclick="increment()">
+                <i class="ph-caret-up"></i>
+              </button>
+              <button class="arrownumbersdown" onclick="decrement()">
+                <i class="ph-caret-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="elements">
+          <p class="inputname">Cost of the product</p>
+          <div class="divbuttonscost">
+            <div>
+              <input class="inputstylenumcost" type="number" value="0" />
+            </div>
+            <div>
+              <i class="ph-currency-circle-dollar"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btntotal">Añade a la lista</button>
+
+      <div class="containerlist">
+        <div class="productname">
+          <p class="productnametext">Product name</p>
+        </div>
+
+        <div class="productamount">
+          <p class="productamounttext">0</p>
+        </div>
+
+        <div class="productcost">
+          <p class="productcosttext">0</p>
+        </div>
+
+        <div class="producttotal">
+          <p class="producttotaltext">0</p>
+        </div>
+      </div>
+    </section>
+    <script src="/Project(ShoppingList)/scriptshop.js"></script>
+  </body>
+</html>

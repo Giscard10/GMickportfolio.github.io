@@ -1,0 +1,774 @@
+/* COLORS
+#141414
+#EEC643
+#EEF0F2
+#0D21A1
+#011638
+
+*/
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  opacity: 1;
+}
+
+/*NAVIGATION SECTION*/
+.main-section {
+  background-color: #141414;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+}
+
+.labelphoto {
+  position: absolute;
+  padding: 1.2rem;
+  background-color: #e67700;
+  font-weight: 700;
+  color: white;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  left: 0px;
+  bottom: 0;
+}
+
+.logomick {
+  height: 3.5rem;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.offcanvas-title {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+.nav-first {
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.navfirst {
+  font-family: "Kanit", sans-serif;
+  color: #eef0f2;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navfirst:hover {
+  color: #eec643;
+  transition: 0.4s;
+}
+
+.navbartext {
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  font-family: "Kanit", sans-serif;
+  color: white;
+  font-size: 1.4rem;
+  margin-right: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.contactbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.4rem;
+  width: 8.4rem;
+  border-radius: 1.2rem;
+  background-color: #e67700;
+  margin-top: 1.8rem;
+}
+
+.padding-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactbtn-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Kanit", sans-serif;
+  color: white;
+  transition: all 0.4s;
+}
+
+.contactbtn-link:hover {
+  color: white;
+}
+
+.contactbtn:hover {
+  background-color: #f59f00;
+  transition: all 0.4s;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2.4rem;
+}
+
+.offcanvas-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.offcanvas.show:not(.hiding),
+.offcanvas.showing {
+  transform: none;
+  transition: all 0.5s;
+}
+
+.btn-close {
+  stroke: #ec9a29;
+}
+
+/* ABOUT ME SECTION */
+.aboutme {
+  padding: 4.8rem;
+  padding-bottom: 6rem;
+  /*  background: linear-gradient(
+    to left,
+    rgba(5, 5, 5, 0.826) 0%,
+    rgba(0, 0, 0, 1) 40%
+  ); */
+  background-color: white;
+}
+
+.containerabout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.textaboutme {
+  padding: 4.8rem;
+  text-align: center;
+}
+
+.aboutmeheader {
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  margin-bottom: 2.8rem;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: #38cc94;
+}
+
+.abouttext {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #141414;
+  font-family: "Kanit", sans-serif;
+}
+
+.strongstyle {
+  color: #38cc94;
+  font-weight: 700;
+}
+
+.imgaboutme {
+  background-color: black;
+  width: 70%;
+  filter: brightness(60%);
+  border-top-left-radius: 6.8rem;
+  border-top-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 6.8rem;
+  overflow: hidden;
+  box-shadow: 10px 10px #00000013;
+  position: relative;
+}
+
+.imgaboutmeimg {
+  width: 30rem;
+}
+
+.footercurve {
+  height: 6rem;
+  background-color: #efdf0c;
+  clip-path: ellipse(84% 100% at 83.66% 100%);
+}
+
+/* MY CAREER SECTION*/
+.experience {
+  background: #efdf0c;
+}
+
+.colorresume {
+  padding-bottom: 2.4rem;
+  background: #efdf0c;
+  position: relative;
+}
+
+.gridresume {
+  display: flex;
+  align-items: center;
+  padding: 0 18rem;
+  gap: 1.4rem;
+  width: 100%;
+  padding-top: 2.4rem;
+}
+
+.containercareer {
+  text-align: center;
+  padding-top: 4.2rem;
+}
+
+.resume {
+  padding-left: 6.4rem;
+  padding-right: 6.4rem;
+}
+
+.logodiv {
+  padding-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoresume {
+  width: 4.2rem;
+  height: 4.2rem;
+  background-color: #38cc94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
+  text-align: center;
+}
+
+.servicelinedivwhite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-linewhite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141414;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.ph-aperture {
+  color: #eef0f2;
+  font-size: 3.6rem;
+}
+
+.resumetext {
+  width: 100%;
+}
+
+.positiontext {
+  color: #141414;
+  font-size: 2.2rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.companytext {
+  color: #38cc94;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+}
+
+.descriptiondiv {
+  padding-top: 1.2rem;
+  padding-left: 24rem;
+  padding-right: 24rem;
+  padding-bottom: 1.2rem;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.descriptiontext {
+  color: black;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+}
+.ph-activity {
+  color: #141414;
+  font-size: 2rem;
+}
+
+.ph-arrow-circle-right,
+.ph-arrow-circle-left {
+  color: white;
+  font-size: 4.5rem;
+}
+
+.ph-arrow-circle-right {
+  position: absolute;
+  right: 3.5%;
+  bottom: 45%;
+}
+
+.ph-arrow-circle-left {
+  position: absolute;
+  left: 3.5%;
+  bottom: 45%;
+}
+
+.ph-arrow-circle-right:hover {
+  transform: scale(1.3);
+  transition: all 0.3s;
+  color: black;
+}
+
+.ph-arrow-circle-left:hover {
+  transform: scale(1.3);
+  transition: all 0.3s;
+  color: black;
+}
+
+.resetlabel {
+  color: #141414;
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  position: absolute;
+  left: 4.1%;
+  bottom: 40%;
+}
+
+.hidden {
+  display: none;
+  transition: all 0.3s;
+}
+
+.show {
+  display: block;
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 0.7s;
+  animation-name: bounce;
+  animation-duration: 0.7s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* SKILLS SECTION */
+
+#myskills {
+  padding-bottom: 4.8rem;
+}
+
+.hero {
+  background-color: #efdf0c;
+  height: 10rem;
+  clip-path: ellipse(75% 100% at 27.5% 0%);
+}
+
+.skillsheader {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  font-size: 3.6rem;
+  text-align: center;
+  padding-top: 3.2rem;
+  color: #e67700;
+}
+
+.circlediv {
+  padding: 1.4rem;
+  background-color: white;
+  border: 5px solid #e67700;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.sub {
+  font-size: 1.4rem;
+}
+
+.skillscomponent {
+  padding-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillcard {
+  width: 30%;
+  border: 3px solid #51515162;
+  border-radius: 30px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skilltitle {
+  color: #e67700;
+}
+
+.skill-logo {
+  height: 5.6rem;
+  transition: all 0.5s;
+}
+
+.skill-logo:hover {
+  transform: scale(1.1);
+}
+
+.bootstrap {
+  height: 4.8rem;
+}
+
+.subskills {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.subheadercolor {
+  color: #efdf0c;
+  font-weight: 700;
+}
+
+.skills {
+  padding: 3.4rem;
+  display: flex;
+  justify-content: center;
+  gap: 30rem;
+}
+
+.gridtech {
+  padding-left: 6.4rem;
+  padding-right: 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+  gap: 2rem;
+}
+
+.soon {
+  margin-top: 4.6rem;
+  text-align: center;
+}
+
+.techdetails {
+  display: flex;
+  justify-content: center;
+}
+
+.techtitle {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.profdetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.professionalskill {
+  font-weight: 800;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.cvbutton {
+  background-color: #38cc94;
+  height: 3.6rem;
+  width: 20rem;
+  border-radius: 50px;
+}
+
+.cvbutton:hover {
+  background-color: #eec643;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.link-text {
+  font-size: 1.2rem;
+}
+
+/* SERVICES SECTION ----------------------------------------------*/
+
+#services {
+  padding-left: 6.4rem;
+  padding-right: 6.4rem;
+  background-image: url("backgroundstyle.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.serviceheader {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  font-size: 3.6rem;
+  text-align: center;
+  padding-top: 3.2rem;
+  color: white;
+}
+
+.servicelinediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesinfo {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 3rem;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+.service-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eec643;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.serviceline {
+  width: 30%;
+  size: 2.4rem;
+}
+
+.servicetext {
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+
+.service-description {
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.gridservices {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.servicecontainer {
+  padding: 2.4rem;
+  transition: 0.6s all;
+}
+
+.servicecontainer:hover {
+  transform: scale(1.1);
+}
+
+.serviceone {
+  background-color: #00dbde;
+  background-image: linear-gradient(
+      90deg,
+      rgba(163, 0, 222, 0.57) 0%,
+      rgba(149, 11, 151, 0.57) 100%
+    ),
+    url("/skillicons/customersupport.jpg");
+  box-shadow: -1px 2px 6px 2px rgb(255, 255, 255);
+  -webkit-box-shadow: -1px 2px 6px 2px rgb(193, 191, 191);
+  -moz-box-shadow: -1px 2px 6px 2px rgb(255, 255, 255);
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 10px;
+}
+
+.servicetwo {
+  background-color: #ffe53b;
+  background-image: linear-gradient(
+      147deg,
+      rgba(255, 59, 59, 0.57) 0%,
+      rgba(187, 22, 22, 0.57) 74%
+    ),
+    url("/skillicons/coding.jpg");
+
+  box-shadow: -1px 2px 6px 2px rgb(255, 255, 255);
+  -webkit-box-shadow: -1px 2px 6px 2px rgb(193, 191, 191);
+  -moz-box-shadow: -1px 2px 6px 2px rgb(255, 255, 255);
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 10px;
+}
+
+.servicethree {
+  background-color: #f4d03f;
+  background-image: linear-gradient(
+      132deg,
+      rgba(170, 145, 47, 0.57) 0%,
+      rgba(113, 92, 27, 0.57) 100%
+    ),
+    url("/skillicons/support.jpg");
+
+  box-shadow: -1px 2px 6px 2px rgb(255, 255, 255);
+  -webkit-box-shadow: -1px 2px 6px 2px rgb(193, 191, 191);
+  -moz-box-shadow: -1px 2px 6px 2px rgb(255, 255, 255);
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 10px;
+}
+
+.servicefour {
+  background-color: #fbab7e;
+  background-image: linear-gradient(
+      62deg,
+      rgba(56, 39, 186, 0.57) 0%,
+      rgba(28, 19, 154, 0.57) 100%
+    ),
+    url("/skillicons/teammanagement.jpg");
+
+  box-shadow: -1px 2px 6px 2px rgb(255, 255, 255);
+  -webkit-box-shadow: -1px 2px 6px 2px rgb(193, 191, 191);
+  -moz-box-shadow: -1px 2px 6px 2px rgb(255, 255, 255);
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 10px;
+}

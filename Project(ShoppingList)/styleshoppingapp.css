@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+}
+
+/* NAV SECTION */
+.navdiv {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  background-color: #4464ad;
+}
+
+.navbar {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbartext {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.btn-back {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #4464ad;
+  padding: 0.8rem;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.btn-back:hover {
+  background-color: black;
+  color: white;
+}
+
+/* SECTION PRESENTATION */
+
+#presentation {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    antiquewhite 12%,
+    rgb(255, 255, 255) 12%,
+    rgb(255, 255, 255) 88%,
+    antiquewhite 88%
+  );
+}
+
+.textprincipal {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #4464ad;
+  margin-bottom: 0;
+}
+
+.separationline {
+  padding-left: 18rem;
+  padding-right: 18rem;
+}
+
+.line {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: #f58f29;
+}
+
+.subtextprincipal {
+  font-family: "Inter", sans-serif;
+  color: #495057;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* SECTION ADD ITEMS */
+#additems {
+  padding-left: 18rem;
+  padding-right: 18rem;
+  background-color: white;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.inputname {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #495057;
+  font-size: 1.2rem;
+}
+
+.inputstyle {
+  border: none;
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 3px #f58f29 solid;
+  transition: width 0.4s;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  transition: all 0.3s;
+  width: 70%;
+  border: 3px #f58f29 solid;
+  border-radius: 10px;
+}
+
+.inputstyle:focus,
+.inputstyle:hover {
+  outline: none;
+  box-shadow: inset 2px 2px 2px 2px antiquewhite;
+}
+
+.inputstylenum,
+.inputstylenumcost {
+  border: none;
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 3px #f58f29 solid;
+  transition: width 0.4s;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  transition: all 0.3s;
+  width: 100%;
+  border: 3px #f58f29 solid;
+  border-radius: 10px;
+}
+
+.inputstylenum:focus,
+.inputstylenum:hover,
+.inputstylenumcost:hover,
+.inputstylenumcost:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 2px 2px antiquewhite;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.divbuttons {
+  display: flex;
+  width: 45%;
+  gap: 1rem;
+}
+
+.ph-caret-up,
+.ph-caret-down {
+  color: white;
+  font-size: 18px;
+}
+
+.arrownumbersup,
+.arrownumbersdown {
+  background-color: #ffa94d;
+  border: none;
+  transition: all 0.3s;
+}
+
+.arrownumbersup:hover,
+.arrownumbersdown:hover {
+  background-color: #e8590c;
+  border: none;
+  color: white;
+}
+
+.arrownumbersdown:active,
+.arrownumbersup:active {
+  transform: scale(-0.1);
+}
+
+.divbuttonscost {
+  display: flex;
+  width: 45%;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ph-currency-circle-dollar {
+  color: #e8590c;
+  font-size: 1.8rem;
+}
+
+.containerlist {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

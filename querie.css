@@ -1,0 +1,340 @@
+@media (max-width: 80em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 100%;
+  }
+
+  .main-section {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .containerabout {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 6.4rem;
+    position: relative;
+    padding-bottom: 10rem;
+    padding-top: 5.4rem;
+  }
+
+  .imgaboutme {
+    width: 30rem;
+    left: 15%;
+  }
+  .aboutme {
+    padding: 1rem;
+  }
+
+  .gridtech {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+
+  .descriptiondiv {
+    padding-left: 7.8rem;
+    padding-right: 7.8rem;
+    font-size: 2.4rem;
+  }
+
+  .gridresume {
+    padding-bottom: 2.4rem;
+    padding-left: 8.2rem;
+    padding-right: 8.2rem;
+  }
+
+  .ph-arrow-circle-right {
+    right: 0.5%;
+  }
+  .ph-arrow-circle-left {
+    left: 0.5%;
+  }
+  .resetlabel {
+    left: 1.8%;
+  }
+
+  .gridservices {
+    grid-template-columns: 1fr;
+    padding: 2.4rem;
+  }
+
+  .serviceone {
+    padding-bottom: 6rem;
+  }
+
+  .servicefour {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 36em) {
+  html {
+    font-size: 90%;
+  }
+
+  .main-section {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .imgaboutme {
+    height: 25rem;
+    width: 25rem;
+    left: 15%;
+  }
+
+  .containerabout {
+    padding-bottom: 6rem;
+  }
+
+  .gridtech {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+
+  .descriptiondiv {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 2.4rem;
+  }
+
+  .gridresume {
+    text-align: center;
+    flex-direction: column-reverse;
+    padding-bottom: 2.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .logodiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #services {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .gridservices {
+    grid-template-columns: 1fr;
+    padding-top: 2.4rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .servicesinfo {
+    margin-top: 1.5rem;
+  }
+
+  .serviceone {
+    padding-bottom: 6rem;
+  }
+
+  .servicefour {
+    padding-bottom: 4rem;
+  }
+
+  .skill-logo {
+    height: 4rem;
+  }
+
+  .logoresume {
+    gap: 1.2rem;
+  }
+
+  .ph-arrow-circle-left,
+  .ph-arrow-circle-right {
+    position: inherit;
+  }
+}
+
+@media (max-width: 27em) {
+  html {
+    font-size: 90%;
+  }
+
+  .textaboutme {
+    padding-left: 3.8rem;
+  }
+
+  .main-section {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .imgaboutme {
+    height: 25rem;
+    width: 25rem;
+    left: 5%;
+  }
+
+  .containerabout {
+    padding-bottom: 6rem;
+  }
+
+  .gridtech {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+
+  .descriptiondiv {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 2.4rem;
+  }
+
+  .gridresume {
+    text-align: center;
+    flex-direction: column-reverse;
+    padding-bottom: 2.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .ph-arrow-circle-right {
+    right: 10%;
+    font-size: 4rem;
+    top: 30%;
+  }
+  .ph-arrow-circle-left {
+    left: 10%;
+    top: 30%;
+    font-size: 4rem;
+  }
+  .resetlabel {
+    left: 11.5%;
+    top: 37%;
+    opacity: 0;
+  }
+
+  #services {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .gridservices {
+    grid-template-columns: 1fr;
+    padding-top: 2.4rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .servicesinfo {
+    margin-top: 1.5rem;
+  }
+
+  .serviceone {
+    padding-bottom: 6rem;
+  }
+
+  .servicefour {
+    padding-bottom: 4rem;
+  }
+
+  .skill-logo {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 24em) {
+  .imgaboutme {
+    height: 20rem;
+    width: 25rem;
+    left: 0;
+  }
+
+  html {
+    font-size: 90%;
+  }
+
+  .main-section {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .textaboutme {
+    padding-left: 2.2rem;
+  }
+
+  .containerabout {
+    padding-bottom: 6rem;
+  }
+
+  .gridtech {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+
+  .descriptiondiv {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 2.4rem;
+  }
+
+  .gridresume {
+    text-align: center;
+    flex-direction: column-reverse;
+    padding-bottom: 2.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .ph-arrow-circle-right {
+    right: 10%;
+    font-size: 4rem;
+    top: 30%;
+  }
+  .ph-arrow-circle-left {
+    left: 10%;
+    top: 30%;
+    font-size: 4rem;
+  }
+  .resetlabel {
+    left: 11.5%;
+    top: 37%;
+    opacity: 0;
+  }
+
+  #services {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .gridservices {
+    grid-template-columns: 1fr;
+    padding-top: 2.4rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .servicesinfo {
+    margin-top: 1.5rem;
+  }
+
+  .serviceone {
+    padding-bottom: 6rem;
+  }
+
+  .servicefour {
+    padding-bottom: 4rem;
+  }
+
+  .skill-logo {
+    height: 4rem;
+  }
+}
